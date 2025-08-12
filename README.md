@@ -1,0 +1,1 @@
+# ChineseNom-translator-by-transformer
