@@ -1,8 +1,11 @@
 import streamlit as st
 from utils.translate import generate_translation_batch
+import os
+from dotenv import load_dotenv
 
 # Set the model directory
-MODEL_DIR = "../models/translation/mt5-nom-translator"
+load_dotenv()
+MODEL_DIR = os.getenv("MODEL_DIR", "../models/translation/mt5-nom-translator")
 
 # Streamlit UI
 st.title("ChineseNom Translator")
